@@ -33,6 +33,12 @@ export default function Home() {
 					</div>
 				</section>
 				
+				<section id="about" className="white-bg">
+					<div className="main-content section">
+						<h1>about</h1>
+					</div>
+				</section>
+				
 				<div id="skills" className="main-content section">
 					<h1>skills</h1>
 				</div>
