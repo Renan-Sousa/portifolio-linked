@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #202124;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-size: 2rem;
+    background:var(--primary-color);
+    color: white;
+}
+
+header {
+    position: fixed;
+    background:  #202124; 
+    border-bottom: 0.1rem solid #EEEEEE;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.space {
+    height: 90px;
+}
+
+.container {
+    width: 100%;
+}
+
+.main-content {
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;
+    padding: 3rem;
+    height: 100vh;
+}
+
+.white-bg {
+    background: white;
+    color: black;
+}

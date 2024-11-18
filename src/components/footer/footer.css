@@ -1,0 +1,29 @@
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-left: 2rem;
+}
+
+.info-text {
+    margin-left: 1rem;
+}

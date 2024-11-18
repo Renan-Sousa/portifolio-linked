@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+form {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+form .input-box {
+    margin-top: 20px;
+}
+
+.input-box .field {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.input-box .field.message {
+    height: 200px;
+    resize: none;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    background:  rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
