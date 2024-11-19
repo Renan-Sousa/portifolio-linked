@@ -1,5 +1,6 @@
 'use client'
 
+import Swal from 'sweetalert2'
 import { outfit } from '@/app/fonts';
 import './contact.css'
 
@@ -24,7 +25,11 @@ export default function Contact() {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
+            Swal.fire({
+                title: "Sucesso!",
+                text: "Sua mensagem foi enviada.",
+                icon: "success"
+            });
         }
     }
 

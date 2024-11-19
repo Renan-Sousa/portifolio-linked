@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/contact/contact.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/contact/contact.jsx", "src/app/assets/data/projects.js", "src/components/ProjectSection/ProjectSection.js", "src/components/ProjectSection/projectItem.js"],
   "exclude": ["node_modules"]
 }

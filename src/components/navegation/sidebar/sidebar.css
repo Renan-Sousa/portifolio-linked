@@ -1,0 +1,19 @@
+.side-socials {
+    width: 145.35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 300px;
+    background: white;
+}

@@ -1,0 +1,24 @@
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 30%);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 20%);
+}
+
+.skill-item h3 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}

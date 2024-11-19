@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/navegation/navbar";
+import Navbar from "@/components/navegation/navbar/navbar";
 import { roboto } from "@/app/fonts"
 import "./styles.css";
 
