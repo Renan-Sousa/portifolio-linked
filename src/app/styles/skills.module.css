@@ -1,0 +1,204 @@
+/* Estilo dos itens de habilidades */
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skillItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilo do título dentro dos itens */
+.skillItem h3 {
+    font-size: .9rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px; 
+    text-align: center;
+}
+
+/* Estilo do contêiner em grid */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Ajuste de tamanho para os ícones */
+.skillItem img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skillItem:hover img {
+    transform: scale(1.1); 
+}
+
+.skillsAreas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+/* Coluna de skills */
+.skillsColumn {
+    flex: 1;
+    min-width: 300px; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título da coluna */
+.skillsTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Item individual de progresso */
+.skillProgressItem {
+    margin-bottom: 1rem;
+}
+
+/* Nome da skill */
+.skillName {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Barra de progresso */
+.progressBar {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+@media (max-width: 1065px) {
+    .skillsTitle {
+        font-size: 1.4rem;
+    }
+    
+}
+
+/* Responsividade para telas médias (tablets e menores) */
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        padding: 1.5rem;
+    }
+
+    .skillItem {
+        padding: 1rem;
+    }
+
+    .skillItem img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skillItem h3 {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    .skillsAreas {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .skillsColumn {
+        width: 100%; 
+    }
+
+    .skillsTitle {
+        font-size: 1.5rem;
+        text-align: center; 
+    }
+
+    .skillName {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .progressBar {
+        height: 8px; 
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 1rem;
+    }
+
+    .skillItem {
+        padding: 0.8rem; 
+    }
+
+    .skillItem img {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .skillItem h3 {
+        font-size: 0.75rem; 
+        letter-spacing: 1px;
+    }
+
+    .skillsAreas {
+        gap: 1.5rem; 
+    }
+
+    .skillsColumn {
+        padding: 0 0.5rem; 
+    }
+
+    .skillsTitle {
+        font-size: 1.4rem;
+    }
+
+    .skillName {
+        font-size: .8rem;
+    }
+
+    .progressBar {
+        height: 6px; 
+    }
+}

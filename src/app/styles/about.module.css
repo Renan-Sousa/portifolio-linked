@@ -1,0 +1,150 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about .content img {
+    height: auto;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px; 
+}
+
+.text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.content {
+    width: 1250px;
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.text h1 {
+    color: white;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.text h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.text p {
+    color: #c0c4d6;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 38px;
+}
+
+.text button {
+    background: #2F2E41;
+    color: white;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.text button:hover{
+    transform: scale(1.2);
+    background: transparent;
+    border: 2px solid white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 90%; /* Ajusta o tamanho para telas menores */
+    }
+
+    .text h1 {
+        font-size: 60px; /* Reduz o tamanho do título */
+    }
+
+    .text h5 {
+        font-size: 20px; /* Ajusta o tamanho do subtítulo */
+    }
+
+    .text p {
+        font-size: 18px; /* Ajusta o tamanho do parágrafo */
+    }
+
+    .text button {
+        font-size: 15px; /* Ajusta o tamanho do botão */
+        padding: 8px 25px; /* Reduz o padding do botão */
+    }
+}
+
+@media (max-width: 768px) {
+    .about .content {
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .about .content img {
+        width: 80%; /* Reduz a largura da imagem */
+        max-width: 300px; /* Limita a largura da imagem */
+        margin-bottom: 30px;
+    }
+
+    .text {
+        width: 100%; /* Aumenta a largura do texto para ocupar toda a área */
+        padding: 0 20px; /* Adiciona mais padding nos lados */
+    }
+
+    .text h1 {
+        font-size: 50px; /* Reduz o tamanho do título */
+    }
+
+    .text h5 {
+        font-size: 18px; /* Ajusta o tamanho do subtítulo */
+    }
+
+    .text p {
+        font-size: 16px; /* Ajusta o tamanho do parágrafo */
+    }
+
+    .text button {
+        font-size: 14px; /* Ajusta o tamanho do botão */
+        padding: 8px 20px; /* Ajusta o padding do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 40px; /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .text h5 {
+        font-size: 16px; /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .text p {
+        font-size: 14px; /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .text button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
