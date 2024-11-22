@@ -1,6 +1,6 @@
-## Getting Started
+## Iniciando o site
 
-First, run the development server:
+Basta executar um dos comandos abaixo e abrir o site localmente. Você precisa ter o node instalado.
 
 ```bash
 npm run dev
@@ -12,4 +12,4 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para abrir vá para [http://localhost:3000](http://localhost:3000) no navegador.
