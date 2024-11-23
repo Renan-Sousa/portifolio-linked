@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+module.exports = {
+  assetPrefix: './',
+  basePath: '/nome-do-seu-repositorio',
+  trailingSlash: true,
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",  // <=== habilita o export estático
+  reactStrictMode: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
