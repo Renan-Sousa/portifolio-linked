@@ -1,6 +1,6 @@
 import styleAbout from "@/app/styles/about.module.css"
 import { outfit } from "@/app/fonts/fonts";
-import SectionTitle from "./SectionTitle";
+
 import Link from "next/link";
 
 export default function AboutSection() {

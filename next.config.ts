@@ -1,14 +1,7 @@
-module.exports = {
-  assetPrefix: './',
-  basePath: '/nome-do-seu-repositorio',
-  trailingSlash: true,
-}
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== habilita o export estático
+  output: "export",  // <=== enables static exports
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
-
+module.exports = nextConfig
